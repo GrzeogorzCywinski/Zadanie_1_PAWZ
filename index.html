@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Magazyn Elektro-Bud</title>
+</head>
+<body>
+  <h1>Magazyn Elektro-Bud</h1>
+
+  <h2>Produkty</h2>
+  <table border="1" cellpadding="5">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nazwa</th>
+        <th>EAN</th>
+        <th>Kategoria</th>
+        <th>Sektor / półka</th>
+        <th>Ilość</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="product-rows"></tbody>
+  </table>
+
+  <h2>Dodaj produkt</h2>
+  <form id="add-form">
+    Nazwa: <input id="name" required><br>
+    Kod EAN: <input id="ean" required><br>
+    Kategoria: <input id="category"><br>
+    Sektor: <input id="sector"><br>
+    Półka: <input id="shelf"><br>
+    Ilość: <input id="quantity" type="number" min="0" required><br>
+    <button type="submit">Dodaj</button>
+  </form>
+
+  <script src="product.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
